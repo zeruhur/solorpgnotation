@@ -578,6 +578,10 @@ d: Action=3+Heart=2=5 vs Challenge=6,8 -> Miss
 @ Face Danger (Attempting to deflect the incoming strike)
 d: Action=1+Iron=3=4 vs Challenge=7,8 -> Miss
 => Pay the Price: -3 health. Foe retains initiative.
+
+@ Endure Harm (-3 health)
+d: Action=2+Iron=3=5 vs Challenge=4,8 -> Weak Hit
+=> Press on.
 [PC:Alex|health-3]
 
 @ Clash (foe has initiative, close quarters)
