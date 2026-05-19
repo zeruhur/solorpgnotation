@@ -568,18 +568,34 @@ These systems use move-based resolution without traditional initiative. Round ma
 
 ```
 [COMBAT]
-[F:Broken|Threat 3|Engaged]
+[F:Broken|Formidable|Engaged]
+[Track:Broken|Progress 0/10]
 
-@ Strike
-d: d6+3=8 vs d10=5, d10=3 -> Strong Hit
-=> +1 momentum. [F:Broken|Threat-2|Threat 1|staggered]
+@ Enter the Fray (facing off)
+d: Action=3+Heart=2=5 vs Challenge=6,8 -> Miss
+=> Broken strikes first. Pay the Price. Foe has initiative.
 
-@(Broken) Counters
-d: d10=7 -> Endure Harm
-d: d6+2=6 vs d10=8, d10=4 -> Weak Hit
-=> -1 health, press on.
-[PC:Alex|health-1]
+@ Face Danger (Attempting to deflect the incoming strike)
+d: Action=1+Iron=3=4 vs Challenge=7,8 -> Miss
+=> Pay the Price: -3 health. Foe retains initiative.
+[PC:Alex|health-3]
 
+@ Clash (foe has initiative, close quarters)
+d: Action=4+Iron=3=7 vs Challenge=5,9 -> Miss
+=> Momentum=10 > Challenge=5,9; burn to cancel both challenge dice -> Strong Hit
+=> +1 Harm. 3 harm (deadly weapon) -> mark 3 progress. I gain the initiative.
+[Track:Broken|Progress 3/10]
+[PC:Alex|momentum=2]
+
+@ Strike (I have initiative, close quarters)
+d: Action=6+Iron=3=9 vs Challenge=2,4 -> Strong Hit
+=> +1 harm. 3 harm (deadly weapon) -> mark 3 progress. I retain initiative.
+[Track:Broken|Progress 6/10]
+
+@ End the Fight
+d: Progress=6 vs Challenge=3,5 -> Strong Hit
+=> Broken is no longer in the fight.
+[F:Broken|dead]
 [/COMBAT]
 ```
 
